@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8f3bd24bae.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">This is<span> me.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About myself</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#social-media">Social Media</a></li>
+            </ul>
+            <div class="menu-button">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Welcome to my Portfolio!</div>
+                <div class="text-2">I am Carlos Alvarado.</div>
+                <div class="text-3">A Salesforce Associate at The Ksquare Group</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me section -->
+    <section class="about-me" id="about-me">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/ProfilePic.jpg" alt="">
+                </div>
+            <div class="column right">
+                <div class="text">I am Carlos Alvarado</div>
+                <p>Graduated in <span>Robotics Engineering at Universidad Politecnica de Yucatan</span>. Currently, I am 24 years old and what drove me into the engineering path was the curiosity to learn how modern world works. I consider myself someone easy to approach and enthusiastic. In addition, I like when someone tells me I am wrong and corrects me, because is another way of learning.</p>
+                <a href="images/Resume.pdf" target="_blank">CV File</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title-projects">My projects</h2>
+            <div class="projects-content">
+                <div class="card">
+                    <div class="box">
+                        <div class="text-projects">Automated Robotic Car</div>
+                        <img class="img-projects"src="images/AngleCar.jpeg" alt="">
+                        <p>Principal project while at the university. Working with Arduino to implement a gyroscope, PSOC controller to coordinate the cars movement and trajectory using a distance sensor, and Raspberry PI to implement color recognition through a camera.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <div class="text-projects">Crowd Navigation Using a Mobile Robot</div>
+                        <video class="vid-projects"controls>
+                            <source src="images/QVOC.mp4" type="video/mp4">
+                          </video>
+                        <p>Internship project at CIMAT in Guanajuato. Using previous work of CIMAT master’s degree students which particularly focused on the application of computational vision as well as navigation techniques within crowds for a mobile robot to freely move while avoiding any possible obstacle.</p>
+                    </div>
+                    <a href="images/Crowd_navigation_using_a_mobile_robot.pdf" target="_blank">Intership Report</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text-skills">Hard Skills</div>
+                    <img class="img-hardskills" src="images/Collage.png" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text-skills">Soft Skills</div>
+
+                    <div class="info">
+                        <span>Emphaty</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="line ss1"></div>
+
+                    <div class="info">
+                        <span>Teamwork</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="line ss2"></div>
+
+                    <div class="info">
+                        <span>Problem Solving</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line ss3"></div>
+
+                    <div class="info">
+                        <span>Decision Making</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line ss4"></div>
+
+                    <div class="info">
+                        <span>Critical Thinking</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line ss5"></div>
+
+                    <div class="info">
+                        <span>Assertive Communication</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="line ss6"></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies section -->
+    <section class="about-me" id="hobbies">
+        <div class="max-width">
+            <h2 class="title">Hobbies</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/Hobby.jpeg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">What I Like To Do</div>
+                    <p>On my free time what I really like is to watch anime, series or movies. Nevertheless, I do not only spend time doing that, I also enjoy going out with friends, working out, and lately I have been going out with a few friends and bike to communities, roads and towns around Yucatan.</p>
+                </div>
+        </div>
+    </section>
+
+    <!-- Social Media section -->
+    <section class="social-media" id="social-media">
+        <div class="max-width">
+            <h2 class="title">Social Media</h2>
+            <div class="social-media-section">
+                <div class="button">
+                    <div class="icon"><i class="fab fa-salesforce"></i></div>
+                    <span><a href="https://trailblazer.me/id/calvaradorostro" target="_blank">Salesforce</a></span>
+                </div>
+                <div class="button">
+                    <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+                    <span><a href="https://www.linkedin.com/in/carlos-alvarado-rostro" target="_blank">Likedin</a></span>
+                </div>
+                <div class="button">
+                    <div class="icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <span><a href = "mailto: calvaradorostro@gmail.com">Email me</a></span>
+                </div>
+                <div class="button">
+                    <div class="icon"><i class="fab fa-instagram"></i></div>
+                    <span><a href="https://www.instagram.com/calvarado97/" target="_blank">Instagram</a></span>
+                </div>
+                <div class="button">
+                    <div class="icon"><i class="fab fa-facebook"></i></div>
+                    <span><a href="https://www.facebook.com/carlos.alvarado.92317/" target="_blank">Facebook</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>

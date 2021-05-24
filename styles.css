@@ -70,7 +70,7 @@
 
 /* Similar sections */
 section{
-    padding: 100px 0;
+    padding: 10vw 0;
 }
 
 .about-me .projects .skills{
@@ -80,7 +80,7 @@ section{
 section .title{
     position: relative;
     text-align: center;
-    font-size: 35px;
+    font-size: 4vw;
     font-weight: 600;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -103,17 +103,17 @@ section .title{
 }
 
 .home .home-content .text-1{
-    font-size: 22px;
+    font-size: 2vw;
 }
 
 .home .home-content .text-2{
-    font-size: 60px;
+    font-size: 6vw;
     font-weight: 500;
     margin-left: -3;
 }
 
 .home .home-content .text-3{
-    font-size: 36px;
+    font-size: 2.5vw;
     margin: 5px 0;
 }
 
@@ -140,7 +140,7 @@ section .title{
 }
 
 .about-me .about-content .right .text{
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -150,15 +150,15 @@ section .title{
 }
 
 .about-me .about-content .right p{
-    text-align: justify;
-    font-size: 25px;
+    text-align:left;
+    font-size: 2vw;
 }
 
 .about-me .about-content .right a{
     display: inline-block;
     background: rgba(0,146,218,255);
     color: #fff;
-    font-size: 20px;
+    font-size: 1.5vw;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
@@ -180,19 +180,18 @@ section .title{
 }
 
 .projects .projects-content .text-projects{
-    font-size: 30px;
+    font-size: 2.5vw;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .projects .projects-content p{
-    text-align: justify;
-    font-size: 25px;
+    text-align: left;
+    font-size: 2vw;
     margin-top: 20px;
 }
 
 .projects{
-    padding: 50px 50px;
     background: rgba(224,27,36,255);
     color: rgba(0,146,218,255);
 }
@@ -200,7 +199,7 @@ section .title{
 .projects .title-projects{
     position: relative;
     text-align: center;
-    font-size: 35px;
+    font-size: 4vw;
     font-weight: 600;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -218,20 +217,18 @@ section .title{
 }
 
 .projects .projects-content .img-projects{
-    width: 60%; 
-    height: 45%;
+    width: 25vw; 
 }
 
 .projects .projects-content .vid-projects{
-    width: 60%; 
-    height: 45%; 
+    width: 25vw;  
 }
 
 .projects .projects-content a{
     display: inline-block;
     background: rgba(0,146,218,255);
     color: #fff;
-    font-size: 20px;
+    font-size: 1.5vw;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
@@ -246,7 +243,7 @@ section .title{
 
 /* Skills section */
 .skills .skills-content .text-skills{
-    font-size: 25px;
+    font-size: 2.5vw;
     font-weight: 500;
     margin-bottom: 20px;
     font-family: 'Zen Dots', cursive;
@@ -266,20 +263,20 @@ section .title{
 }
 
 .skills .skills-content .left .img-hardskills{
-    width: 80%; 
-    height: 70%;
+    width: 90%; 
+    height: 80%;
 }
 
 .skills .skills-content .right .info{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 2.5vw;
 }
 
 .skills .skills-content .right span{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.8vw;
     font-family: 'Zen Dots', cursive;
 }
 
@@ -327,18 +324,17 @@ section .title{
 /* Hobbies section */
 #hobbies{
     background: rgba(224,27,36,255);
-    color: rgba(0,146,218,255);
+    color: black;
 }
 
 #hobbies .title{
     position: relative;
     text-align: center;
-    font-size: 35px;
+    font-size: 4vw;
     font-weight: 600;
     margin-bottom: 20px;
     padding-bottom: 20px;
     font-family: 'Zen Dots', cursive;
-    -webkit-text-stroke: 2px black;
 }
 
 #hobbies .about-content .left img{
@@ -586,3 +582,41 @@ section .title{
     
 }
 
+@media
+(max-width: 450px){
+    .menu-button{
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: crimson;
+        text-align: center;
+        padding-top: 60px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 35px;
+    }
+
+    .about-me .about-content .left img{
+        height: 200px;
+        width: 200px;
+    }
+}
